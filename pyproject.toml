@@ -1,0 +1,26 @@
+[project]
+name = "deep-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Your Name", email = "yourgmail@example.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "keras>=3.15.1",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "openpyxl>=3.1.5",
+    "pandas>=3.0.6",
+    "python-dateutil>=2.9.0.post0",
+    "scikit-learn>=1.9.1",
+    "tensorflow>=2.21.0",
+]
+
+[project.scripts]
+deep-learning = "deep_learning:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
